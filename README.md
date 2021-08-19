@@ -1,6 +1,7 @@
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.github.tingbob/flowLayout/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.github.tingbob/flowLayout)
 
 # FlowLayout
-Android流式布局，支持单选、多选等，适合用于产品标签等。
+基于hongyang，支持AndroidX，Android流式布局，支持单选、多选等，适合用于产品标签等。
 
 
 ##特色
@@ -12,17 +13,11 @@ Android流式布局，支持单选、多选等，适合用于产品标签等。
 * 支持adapter.notifyDataChanged
 * Activity重建（或者旋转）后，选择的状态自动保存
 
-##效果图
-
-<img src="flowlayout_03.gif" width="320px"/>
-
-<img src="sc.png" width="320px"/>
-
 ## 用法
 
 ```java
 dependencies {
- compile 'com.hyman:flowlayout-lib:1.1.2'
+ implementation 'io.github.tingbob:flowlayout:1.0.0'
 }
 ```
 
@@ -30,13 +25,13 @@ dependencies {
 布局文件中声明：
 
 ```java
- <com.zhy.view.flowlayout.TagFlowLayout
+ <com.tingbob.flowlayout.TagFlowLayout
         android:id="@+id/id_flowlayout"
         zhy:max_select="-1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:padding="20dp">
-    </com.zhy.view.flowlayout.TagFlowLayout>
+    </com.tingbob.flowlayout.TagFlowLayout>
 ```
 
 支持属性：
